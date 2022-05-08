@@ -3,19 +3,19 @@ public class FastPower {
 
 
 
-        int ans = fastpower(5,5);
+        long ans = fastpower(3978432,5,100000000);
         System.out.print(ans);
 
     }
-    static  int fastpower(int a, int b){
-        int result = 1;
+    static  long fastpower(long a, long b,int n){
+        long result = 1;
 
         while (b > 0){
             if ((b & 1) !=0){
-                result = result * a;
+                result = (result * a %n) % n;
 
             }
-                a = a * a;
+                a = (a % n * a % n) % n ;
                 b = b >> 1;
 
 
