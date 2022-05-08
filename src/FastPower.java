@@ -6,7 +6,11 @@ public class FastPower {
         long ans = fastpower(3978432,5,100000000);
         System.out.print(ans);
 
+
+
     }
+
+
     static  long fastpower(long a, long b,int n){
         long result = 1;
 
